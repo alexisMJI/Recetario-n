@@ -31,7 +31,7 @@ export const Login = () => {
     }
     
     
-    try {
+    /*try {
       //definimos una variable que va a tener el valor "data" de la peticion realizada si el logueo es correcto
       const {data} = await clienteAxiosUsers.post('/auth/token',{email,password}) 
       console.log(data)
@@ -55,16 +55,20 @@ export const Login = () => {
         error: true
       })
       
-      try {
-        const {data} = await clienteAxiosRecipes(("/recipes"));
-        console.log(data)
-      } catch (error) {
-        console.log(error)
-      }
 
       return
     }
-
+    */
+  
+    try {
+      const {data} = await clienteAxiosRecipes(("/recipes"));
+      console.log(data)
+      return
+      
+    } catch (error) {
+      console.log(error)
+    }
+    return
   }
 
   //extraemos el msg de alerta
