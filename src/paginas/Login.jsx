@@ -21,7 +21,7 @@ export const Login = () => {
     //Cancela la acción del evento, asi no nos redirige 
     e.preventDefault();
     
-    /*// Comprobamos que no haya campos vacios
+    // Comprobamos que no haya campos vacios
     if([email, password].includes('')){
       setAlerta({
         msg: 'todos los campos son obligatorios',
@@ -58,17 +58,9 @@ export const Login = () => {
 
       return
     }
-    */
+    
   
-    try {
-      const {data} = await clienteAxiosRecipes(("/recipes"));
-      console.log(data)
-      return
-      
-    } catch (error) {
-      console.log(error)
-    }
-    return
+    
   }
 
   //extraemos el msg de alerta
