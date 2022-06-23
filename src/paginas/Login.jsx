@@ -55,6 +55,12 @@ export const Login = () => {
         error: true
       })
       
+      try {
+        const {data} = await clienteAxiosRecipes(("/recipes"));
+        console.log(data)
+      } catch (error) {
+        console.log(error)
+      }
 
       return
     }
