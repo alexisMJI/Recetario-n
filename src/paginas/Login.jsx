@@ -21,7 +21,7 @@ export const Login = () => {
     //Cancela la acción del evento, asi no nos redirige 
     e.preventDefault();
     
-    // Comprobamos que no haya campos vacios
+    /*// Comprobamos que no haya campos vacios
     if([email, password].includes('')){
       setAlerta({
         msg: 'todos los campos son obligatorios',
@@ -31,7 +31,7 @@ export const Login = () => {
     }
     
     
-    /*try {
+    try {
       //definimos una variable que va a tener el valor "data" de la peticion realizada si el logueo es correcto
       const {data} = await clienteAxiosUsers.post('/auth/token',{email,password}) 
       console.log(data)
@@ -100,9 +100,9 @@ export const Login = () => {
           Registrate
         </Link>
 
-        <Link to="/olvide-password" className='block text-center my-5 text-slate-500 uppercase text-sm'>
+        {/*<Link to="/olvide-password" className='block text-center my-5 text-slate-500 uppercase text-sm'>
           Olvide mi password
-        </Link>
+        </Link>*/}
       </nav>
     </>
   )
