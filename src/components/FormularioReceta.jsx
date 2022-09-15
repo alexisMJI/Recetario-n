@@ -133,8 +133,8 @@ const FormularioReceta = () => {
           <label className='text-gray-700 uppercase font-bold text-sm' htmlFor='preparation'>Preparacion</label>
           <input id='preparation' type="text" className='border w-full p-2 mt-2 placeholder-gray-400 rounded-md' placeholder='Preparacion de la Receta' value={preparation} onChange={(e)=> setPreparation(e.target.value)}/>
           
-          <label className='text-gray-700 uppercase font-bold text-sm'>Imagen</label>
-          <input type="file" multiple onChange={(e)=>covertFileBase64(e.target.files)} className='border w-full p-2 mt-2 placeholder-gray-400 rounded-md'/>
+          <label hidden className='text-gray-700 uppercase font-bold text-sm'>Imagen</label>
+          <input  hidden type="file" multiple onChange={(e)=>covertFileBase64(e.target.files)} className='border w-full p-2 mt-2 placeholder-gray-400 rounded-md'/>
             
   
           <input type='submit' value='Crear' className='mb-5 bg-sky-700 w-full py-3 mt-10 font-bold text-white uppercase rounded hover:cursor-pointer hover:bg-sky-800 hover:transition-colors' />
