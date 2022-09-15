@@ -66,6 +66,7 @@ function Registrar() {
         setPassword('')
         setRepetir_Password('')
         //redirigimos al inicio para que se loguee
+        alert("Se creo su usuario, favor de loguearse!");
         window.history.back();
 
     }catch (error){

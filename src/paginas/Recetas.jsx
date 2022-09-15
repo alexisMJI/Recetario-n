@@ -20,7 +20,7 @@ const Recetas = () => {
             <PreviewReceta key={receta._id} receta={receta} />//recordar que es receta._id en back cris
           
           ))
-        : <p className=' text-center text-gray-600 uppercase p-5'>No hay proyectos</p>}
+        : <p className=' text-center text-gray-600 uppercase p-5'>No hay recetas</p>}
       </div>
     </>
   )
