@@ -18,7 +18,7 @@ const Header = () => {
     <header className='px-4 py-5 bg-white border-b'>
       <div className='md:flex md: justify-between'>
         <h2 className='text-4xl text-sky-600 font-black text-center'>
-          Uptask
+          Recetario
         </h2>
         {/*<input type="search" placeholder='Buscar Recetas' className='rounded-lg lg:w96 block p-2 border' />*/}
           
