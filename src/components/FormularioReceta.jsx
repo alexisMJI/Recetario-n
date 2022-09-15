@@ -106,10 +106,10 @@ const FormularioReceta = () => {
         <label className='text-gray-700 uppercase font-bold text-sm' >Creador de la receta</label>
         <input id='nombreuserreceta' disabled type="text" className='border w-full p-2 mt-2 placeholder-gray-400 rounded-md' value={user_name}/>
 
-        <label className='text-gray-700 uppercase font-bold text-sm'>Imagen</label> 
+        <label hidden className='text-gray-700 uppercase font-bold text-sm'>Imagen</label> 
         {/*Si image esta cargado.. mostar.. */}
         {image && <img src={image} alt="" className='border  p-2 mt-2  rounded-md'/>}
-        <input type="file" accept="image/*"  onChange={(e)=>covertFileBase64(e.target.files)} className='border w-full p-2 mt-2 placeholder-gray-400 rounded-md'/>
+        <input hidden type="file" accept="image/*"  onChange={(e)=>covertFileBase64(e.target.files)} className='border w-full p-2 mt-2 placeholder-gray-400 rounded-md'/>
         
         <input type='submit' value='Modificar' className='mb-5 bg-sky-700 w-full py-3 mt-10 font-bold text-white uppercase rounded hover:cursor-pointer hover:bg-sky-800 hover:transition-colors' />
       </div>
