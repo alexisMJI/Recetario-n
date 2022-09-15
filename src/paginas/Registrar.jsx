@@ -126,9 +126,7 @@ function Registrar() {
           Iniciar Sesion
         </Link>
 
-        <Link to="/olvide-password" className='block text-center my-5 text-slate-500 uppercase text-sm'>
-          Olvide mi password
-        </Link>
+        
       </nav>
     </>
   )
