@@ -65,6 +65,8 @@ function Registrar() {
         setEmail('')
         setPassword('')
         setRepetir_Password('')
+        //redirigimos al inicio para que se loguee
+        window.history.back();
 
     }catch (error){
         console.log(error.response.data)
